@@ -1,0 +1,219 @@
+body,
+html {
+  height: 100%;
+}
+#page-container {
+  position: relative;
+  min-height: 96vh;
+  max-width: 1366px;
+  margin: auto;
+}
+
+#image-content {
+}
+.nav-img {
+  max-width: 30%;
+  padding: 0 5px 6px;
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: rgb(255, 102, 203);
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(9,55,244, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+a.bordered {
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+}
+
+a.bordered:hover:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  height: 1px;
+  color: #fff;
+  width: 80%;
+  border-bottom: 2px solid grey;
+  margin-left: -40%;
+}
+
+.explore {
+  margin: auto;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 2px;
+}
+.explore p {
+  font-weight: 700;
+  color: var(--bs-myColor);
+}
+
+.cards-container {
+  margin: 10px 15px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.images-container img:hover {
+  filter: grayscale(33%) sepia(25%) brightness(95%) hue-rotate(39deg)
+    saturate(195%) contrast(104%) invert(1%);
+  transition: 1s filter linear, 0.4s -webkit-filter linear;
+}
+a svg {
+  padding: 1px 5px 5px 6px;
+}
+
+.images-container img:hover {
+  cursor: pointer;
+}
+
+.footer-bordered {
+  font-weight: 600;
+  color: blueviolet;
+  font-size: 20px;
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
+}
+
+footer span,
+.footer-bordered {
+  font-size: 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--bs-myColor);
+}
+
+.footer-container ul {
+  width: 140px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-right: 3px;
+}
+
+.footer-container ul li:hover {
+  filter: grayscale(100%) sepia(86%) brightness(100%) hue-rotate(159deg)
+    saturate(150%) contrast(150%) invert(7%);
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer-container ul li img {
+  width: 24px;
+  height: 24px;
+}
+
+.copyright a:hover:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  height: 1px;
+  color: #fff;
+  width: 80%;
+  border-bottom: 2px solid grey;
+  margin-left: -43%;
+}
+
+#footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem; /* Footer height */
+}
+
+.desc-image {
+  border: 2px solid white;
+  border-radius: 30px;
+  height: auto;
+  margin: auto;
+  margin-top: 20px;
+  width: 55%;
+  display: block;
+}
+
+#image-content img:hover {
+  filter: grayscale(33%) sepia(25%) brightness(95%) hue-rotate(39deg)
+    saturate(195%) contrast(104%) invert(1%);
+  transform: rotate(0.9deg);
+  transition: 1s filter linear, 0.4s -webkit-filter linear, transform 0.2s ease;
+}
+
+#image-content q {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--bs-myColor);
+  text-align: center;
+  margin: 1rem auto;
+}
+
+#image-content p {
+  max-width: 50%;
+  margin: 0.5rem auto;
+  text-align: center;
+  color: var(--bs-myColor);
+  font-size: 1rem;
+  text-shadow: 1px 0px #c792aa;
+}
+
+#image-content p:hover {
+  color: rgb(255, 149, 149);
+}
+
+.download-btns {
+  max-width: 55%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 25px auto;
+}
+
+.download-btns button {
+  margin: 1.5rem;
+}
+
+@media (max-width: 722px) {
+  .download-btns {
+    flex-direction: column;
+  }
+
+  .download-btns button {
+    margin: 0.5rem;
+  }
+  #image-content p {
+    max-width: 80%;
+    margin: 0.5rem auto;
+    text-align: center;
+    color: var(--bs-myColor);
+    font-size: 1rem;
+  }
+  .desc-image {
+    width: 80%;
+  }
+
+  footer span,
+  .footer-bordered {
+    font-size: 16px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .social-footer {
+    margin: 0 50px -10px 0;
+  }
+}
